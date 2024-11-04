@@ -1,14 +1,39 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+  margin: 0;
   padding: 20px;
 }
-#result {
-  margin-top: 20px;
+
+header nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
   padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
 }
+
+header nav a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  background-color: #575757;
+}
+
+main {
+  text-align: center;
+}
+
+.classification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
 input,
 button,
 select {
@@ -16,4 +41,68 @@ select {
   margin: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  max-width: 600px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
