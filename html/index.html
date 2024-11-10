@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>日本生活 - ゴミの分別</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
   </head>
   <body>
     <!-- Header Navigation -->
     <header>
+      <a href="https://www.ccmc.ac.jp/" target="_blank">
+        <img src="../img/logo.png" alt="Logo" />
+      </a>
       <nav>
         <a href="index.html">HOME</a>
         <a href="./info.html">INFO</a>
         <a href="./contact.html">CONTACT</a>
-        <a href="./how to.html">USAGE</a>
+        <a href="./howto.html">USAGE</a>
       </nav>
     </header>
 
@@ -31,7 +37,7 @@
 
       <!-- Language and Classification Section -->
       <section class="classification">
-        <div style="margin-top: 20px">
+        <div style="margin-top: 10px">
           <label for="languageSelect">言語:</label>
           <select id="languageSelect">
             <option value="ja">日本語</option>
@@ -50,11 +56,24 @@
           <button id="classifyButton">検索</button>
         </div>
 
+        <!-- Display Result -->
         <div id="result" style="margin-top: 20px"></div>
       </section>
+
+      <!-- Usage Link -->
+      <a href="./how to.html" id="usageLink" style="display: none"
+        >Nhấp vào đây để xem cách xử lý</a
+      >
     </main>
 
     <!-- JavaScript -->
-    <script src="../library.js"></script>
+    <script
+      type="module"
+      src="../javascript/classificationFunctions.js"
+    ></script>
+    <script type="module" src="../javascript/wasteData.js"></script>
   </body>
+  <footer>
+    <p>© 2024 日本生活ゴミ分別情報</p>
+  </footer>
 </html>

@@ -1,0 +1,45 @@
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header nav a {
+    padding: 8px 15px;
+  }
+
+  input,
+  button,
+  select {
+    max-width: 100%;
+  }
+
+  #result,
+  section {
+    width: 100%;
+  }
+}
+
+/* Background image for the entire page */
+body {
+  background-image: url("../img/background.jpg"); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Optional: Background styling for just the main section */
+main {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white overlay */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+}
